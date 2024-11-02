@@ -2,14 +2,18 @@
   "name": "x-tube",
   "version": "1.0.0",
   "description": "Making my own youtube(x-tube)",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "javascript",
     "backend"
   ],
   "author": "Naren Lakamannavar",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
