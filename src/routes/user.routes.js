@@ -17,4 +17,8 @@ router.route("/register").post( //Dont forget to add multer middleware
     ]),
     registeredUser)
 
+    router.route("/login").post(loginUser)
+    router.route("/logout").post(verifyJWT,logoutUser)
+
+
 export default router
