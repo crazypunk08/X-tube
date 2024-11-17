@@ -72,7 +72,7 @@ userSchema.methods.generateAccessToken=function(){
         expiresIn:process.env.ACCESS_TOKEN_EXPIRY
     }
 )
-}
+} //Acess token is shortlived
 
 
 userSchema.methods.generateRefreshToken=function(){
@@ -84,7 +84,7 @@ process.env.REFRESH_TOKEN_SECRET,
     expiresIn:process.env.REFRESH_TOKEN_EXPIRY
 }
 )
-}
+} //Refresh token is a bit longlived
 
 
 export const User=mongoose.model("User",userSchema);//its like a blueprint for creating a collection
